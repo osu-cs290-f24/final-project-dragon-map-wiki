@@ -52,3 +52,7 @@
 .gl_modal-header{
     
 }
+
+.hidden{
+    display: none;
+}
