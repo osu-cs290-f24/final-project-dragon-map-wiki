@@ -5,7 +5,7 @@
         <title>Dragon Wiki</title>
 
         <link rel="stylesheet" href="dragMap.css">
-        <scriptsrc="DMap.JS" charset="utf-8" defer> </script>
+        <script src="DMap.js" charset="utf-8" defer> </script>
     </head>
 
     <body>
@@ -16,12 +16,19 @@
 
 
     <button type="button" id="greenland_button"><i class="fas fa-plus"></i></button>
-        <div class="post-contents">
-        <div class="post-image-container">
-          <img src="imgs/arcticDragon.jpg" alt="Arctic Dragon">
-        </div>
+
     <div id="gl_modal-backdrop" class="hidden"></div>
     <div id="gl_dragon-info-modal" class="hidden">
+
+        <div class="gl_post-contents">
+          <div class="gl_post-image-container">
+            <img src="imgs/arcticDragon.jpg" alt="Arctic Dragon">
+          </div>
+        </div>
+
+        <!--changed it to line 20-->
+    <!-- <div id="gl_modal-backdrop" class="hidden"></div>
+    <div id="gl_dragon-info-modal" class="hidden"> -->
       <div class="gl_modal-dialog">
 
         <div class="gl_modal-header">
@@ -36,7 +43,11 @@
           </div>
 
           <button type="button" id="greece_button"><i class="fas fa-plus"></i></button>
-
+              <div class = gr_post-contents>
+              <div class="gr_post-image-container">
+                <img src="imgs/Hydra_screenshot.png">
+              </div>
+              </div>
               <div id="gr_modal-backdrop" class="hidden"></div>
               <div id="gr_dragon-info-modal" class="hidden">
       <div class="gr_modal-dialog">
@@ -53,7 +64,11 @@
           </div>
 
           <button type="button" id="norway_button"><i class="fas fa-plus"></i></button>
-
+              <div class = nw_post-contents>
+              <div class="nw_post-image-container">
+                <img src="imgs/jormungandr.jpg">
+              </div>
+              </div>
               <div id="nw_modal-backdrop" class="hidden"></div>
               <div id="nw_dragon-info-modal" class="hidden">
       <div class="nw_modal-dialog">
@@ -73,7 +88,11 @@
 
 
           <button type="button" id="mexico_button"><i class="fas fa-plus"></i></button>
-
+              <div class="mx_post-contents">
+              <div class="mx_post-image-container">
+                <img src="imgs/Coatyl.png ">
+              </div>
+              </div>
               <div id="mx_modal-backdrop" class="hidden"></div>
               <div id="mx_dragon-info-modal" class="hidden">
       <div class="mx_modal-dialog">
@@ -90,7 +109,11 @@
 
 
               <button type="button" id="china_button"><i class="fas fa-plus"></i></button>
-
+                <div class="china_post-contents">
+                <div class="china_post-image-container">
+                  <img src="imgs/chinesedragon.jpg ">
+                </div>
+                </div>
               <div id="china_modal-backdrop" class="hidden"></div>
               <div id="china_dragon-info-modal" class="hidden">
                 
@@ -114,7 +137,11 @@
 
         
         <button type="button" id="alps_button"><i class="fas fa-plus"></i></button>
-
+          <div class="alps_post-contents">
+          <div class="alps_post-image-container">
+            <img src="imgs/wyvern.jpg ">
+          </div>
+          </div>
               <div id="alps_modal-backdrop" class="hidden"></div>
               <div id="alps_dragon-info-modal" class="hidden">
       <div class="alps_modal-dialog">
@@ -137,7 +164,11 @@
           </div>
 
           <button type="button" id="eng_button"><i class="fas fa-plus"></i></button>
-
+          <div class="eng_post-contents">
+            <div class="eng_post-image-container">
+              <img src="imgs/dragon.jpg ">
+            </div>
+            </div>
           <div id="eng_modal-backdrop" class="hidden"></div>
           <div id="eng_dragon-info-modal" class="hidden">
   <div class="eng_modal-dialog">
@@ -156,7 +187,11 @@
       </div>
 
       <button type="button" id="jpn_button"><i class="fas fa-plus"></i></button>
-
+        <div class="jpm_post-contents">
+        <div class="jpm_post-image-container">
+          <img src="imgs/ryujin.jpg ">
+        </div>
+        </div>
       <div id="jpn_modal-backdrop" class="hidden"></div>
       <div id="jpn_dragon-info-modal" class="hidden">
         <div class="jpn_modal-dialog">
@@ -170,8 +205,8 @@
      myths amalgamate native legends with imported stories about dragons from China, Korea and the Indian subcontinent. 
      The style and appearance of the dragon was heavily influenced by the Chinese dragon, especially the three-clawed long 
       dragons which were introduced in Japan from China in ancient times.Like these other East Asian dragons,
-     most Japanese ones are water deities or kami associated with rainfall 
-     and bodies of water, and are typically depicted as large, wingless, serpentine creatures with clawed feet. </h3>
+     most Japanese ones are water deities or kami associated with rainfall
+     and bodies of water, and are typically depicted as large, wingless, serpentine creatures with clawed feet. Like Ryujin the god of the sea,  </h3>
   </div>
 
           
