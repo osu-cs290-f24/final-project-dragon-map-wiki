@@ -56,3 +56,26 @@
 .hidden{
     display: none;
 }
+
+.modal-footer {
+    display: flex;
+    padding: 0px 15px;
+}
+
+#gl-modal-close{
+    position:absolute;
+    margin: 0px 250px;
+    width: 30px;
+    height:30px;
+    border-radius:50%;
+    color:whitesmoke;
+    background-color:rgb(224, 101, 101);
+    border: 1px solid #e24949;
+    font-size: 25px;
+}
+
+#gl-modal-close:hover {
+    background-color: #df3e3e;
+    cursor: pointer;
+    transform: scale(1.2);
+}
