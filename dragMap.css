@@ -1,158 +1,113 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Section */
 header {
-  background-color: #5a2d82;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
+    background: linear-gradient(135deg, #ff6f61, #ff9a8b);
+    text-align: center;
+    padding: 20px;
+    color: white;
 }
 
 header h1 {
-  margin: 0;
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
 }
 
-nav {
-  margin-top: 10px;
-}
-
-button {
-  background-color: #d4a5e5;
-  color: #333;
-  border: none;
-  padding: 10px 15px;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: #b589d8;
-}
-
-main {
-  padding: 20px;
-}
-
-/* Hidden Class */
-.hidden {
-  display: none;
-}
-
-/* Wiki Section */
-#wiki {
-  margin-top: 20px;
-}
-
-#dragon-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-#dragon-list li {
-  background-color: #d4a5e5;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#dragon-list li:hover {
-  background-color: #b589d8;
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 /* Map Section */
-#map-container {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-  height: 600px;
-  margin: 20px auto;
-  border: 2px solid #5a2d82;
-  overflow: hidden;
-  background-color: #fff;
+.map-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto;
+    border: 4px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-#map-background {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.map-container img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* Markers */
-.marker {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: #d4a5e5;
-  border: 2px solid #5a2d82;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-  transition: transform 0.2s;
+/* Buttons on the Map (Dragon symbols) */
+.map-button {
+    position: absolute;
+    font-size: 30px;  /* Adjust size as needed */
+    background: transparent;
+    color: #ff6f61;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.marker:hover {
-  transform: scale(1.2);
-  background-color: #b589d8;
+.map-button:hover {
+    transform: scale(1.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Popups */
+/* Popup Styling */
 .popup {
-  position: absolute;
-  background-color: white;
-  border: 1px solid #333;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 3;
-  display: none;
-  min-width: 200px;
-  border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-.popup strong {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 1.2em;
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
 }
 
-.popup img {
-  max-width: 100%;
-  border-radius: 5px;
-  margin-bottom: 5px;
+#popup img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
 }
 
-.popup::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border-left: 1px solid #333;
-  border-top: 1px solid #333;
-  transform: rotate(45deg);
-  bottom: -5px;
-  left: 10px;
-  z-index: -1;
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
-  text-align: center;
-  background-color: #5a2d82;
-  color: white;
-  padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
 }
