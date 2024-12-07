@@ -3,5 +3,23 @@
     "express": "^4.21.2",
     "express-handlebars": "^8.0.1",
     "handlebars": "^4.7.8"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "final-project-dragon-map-wiki",
+  "description": "Team members - Lucy Cheng - Chase Schrepel - Tashfia Tabassum - Kyohei Yamaguchi",
+  "version": "1.0.0",
+  "main": "DMap.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-f24/final-project-dragon-map-wiki.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-f24/final-project-dragon-map-wiki/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-f24/final-project-dragon-map-wiki#readme"
 }
