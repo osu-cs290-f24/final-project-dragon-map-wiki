@@ -1,32 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Dragon Wiki</title>
-
-        <link rel="stylesheet" href="DragonWiki.css">
-    </head>
-
-    <header>
-        <h1>Dragon Wiki</h1>
-        <nav>
-            <button id="HomePage" onclick="location.href='/'">HOME PAGE</button>
-        </nav>
-    </header>
-
-    <body>
-        <section id="posts">
-
-        {{#each posts}}
-          {{> oneDragon}}
-        {{/each}}
-        
-        </section>
-    </body>
-
-
-    
-
-</html>
-    
-    
+<h1>{{title}}</h1>
+<link rel="stylesheet" href="/wikipage.css">
+<div class="dragon-list">
+  {{#each dragons}}
+    <div class="dragon-info">
+      <img src="{{image}}" alt="{{name}}">
+      <h2>{{name}}</h2>
+      <p>{{description}}</p>
+    </div>
+  {{/each}}
+</div>
