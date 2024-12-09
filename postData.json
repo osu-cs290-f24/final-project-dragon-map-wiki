@@ -1,0 +1,51 @@
+[
+    {
+      "photo_url": "imgs/arcticDragon.jpg",
+      "dragonName": "Arctic Dragon",
+      "description": "Arctic Dragons are a rare form of reptile, distinguishable by their luminous horns and tail. In the depths of the Arctic Ocean, these magnificent creatures were first discovered over 500 years ago and are thought to be currently endangered."
+    },
+
+    {
+      "photo_url": "",
+      "dragonName": "",
+      "description":"" 
+      
+    },
+
+    {
+      "photo_url": "",
+      "dragonName": "",
+      "description":"" 
+    },
+
+    {
+      "photo_url": "",
+      "dragonName": "",
+      "description":"" 
+
+    },
+
+    {
+      "photo_url": "",
+      "dragonName": "",
+      "description":"" 
+    },
+
+    {
+        "photo_url": "",
+        "dragonName": "",
+        "description":"" 
+    },
+
+    {
+        "photo_url": "",
+        "dragonName": "",
+        "description":"" 
+    },
+
+    {
+        "photo_url": "",
+        "dragonName": "",
+        "description":"" 
+    }
+]
