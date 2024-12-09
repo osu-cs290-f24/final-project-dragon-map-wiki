@@ -2,42 +2,50 @@
     {
       "id": "arctic-dragon",
       "name": "Arctic Dragon",
-      "image": "/imgs/arcticDragon.png"
+      "image": "/imgs/arcticDragon.png",
+      "description": "Arctic Dragons are a rare form of reptile, distinguishable by their luminous horns and tail. In the depths of the Arctic Ocean, these magnificent creatures were first discovered over 500 years ago and are thought to be currently endangered."
     },
     {
       "id": "hydra",
       "name": "Hydra",
-      "image": "/imgs/Hydra_screenshot.png"
+      "image": "/imgs/Hydra_screenshot.png",
+      "description": "The Hydra was a serpent-like water monster with nine heads that is often referenced in Greek mythology. It was an offspring of Typhon and Echidna bred by Hera to kill Hercules. It was Hercules' responsibility to slay the beast during his twelve Labors for King Eurystheus."
     },
     {
       "id": "jormungandr",
       "name": "Jörmungandr",
-      "image": "/imgs/jormungandr.png"
+      "image": "/imgs/jormungandr.png",
+      "description": "In Norse mythology, Jörmungandr is an unfathomably large and monstrous sea serpent who dwells in the world sea, encircling Midgard and biting its own tail. Releasing its tail is one of the signs of the beginning of Ragnarök."
     },
     {
       "id": "coatyl",
       "name": "Coatyl",
-      "image": "/imgs/Coatyl.png"
+      "image": "/imgs/Coatyl.png",
+      "description": "The Coatyl is a species of dragon with large, birdlike wings and no legs. It is native to the humid evergreen tropics of Thumos and the Neacos Islands, and is known for being the only species of dragon that has evolved to have feathers."
     },
     {
       "id": "chinese-dragon",
       "name": "Chinese Dragon",
-      "image": "/imgs/chinesedragon.png"
+      "image": "/imgs/chinesedragon.png",
+      "description": "The Chinese Dragon, also known as loong, is a legendary creature in Chinese mythology and folklore. Chinese dragons are traditionally depicted as snake-like with four legs and are considered potent and auspicious, symbolizing control over water."
     },
     {
       "id": "wyvern",
       "name": "Wyvern",
-      "image": "/imgs/wyvern.png"
+      "image": "/imgs/wyvern.png",
+      "description": "A Wyvern is a mythical dragon with two legs, two wings, and often a pointed tail. It is a popular creature in European heraldry, literature, and folklore, though it rarely breathes fire unlike other dragons."
     },
     {
       "id": "red-dragon",
       "name": "Red Dragon/Dragonette",
-      "image": "/imgs/dragon.png"
+      "image": "/imgs/dragon.png",
+      "description": "Medieval English folklore often depicted dragons kidnapping maidens, leading to battles with heroes. Believed by many in medieval England, dragons were thought to inhabit marshes and were both terrifying and noble. The Red Dragon commonly appears in heraldry and symbolizes the break from earlier traditions of dragon depiction."
     },
     {
       "id": "ryujin",
       "name": "Japanese Dragon (Ryujin)",
-      "image": "/imgs/ryujin.png"
+      "image": "/imgs/ryujin.png",
+      "description": "Japanese dragons are diverse legendary creatures in Japanese mythology and folklore. Influenced by Chinese dragons, they are often water deities associated with rainfall and bodies of water, depicted as large, wingless serpentine creatures with clawed feet."
     }
   ]
   
