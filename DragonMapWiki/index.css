@@ -42,12 +42,12 @@ body::before {
 .center-content {
     text-align: center;
     z-index: 1; 
+    transform: scale(0.9);
 }
 
 .logo {
     width: 150px;  
     height: auto;
-    margin-bottom: 15px; 
 }
 
 .title {
