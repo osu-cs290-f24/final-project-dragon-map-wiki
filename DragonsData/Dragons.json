@@ -1,0 +1,43 @@
+[
+    {
+      "id": "arctic-dragon",
+      "name": "Arctic Dragon",
+      "image": "/imgs/arcticDragon.png"
+    },
+    {
+      "id": "hydra",
+      "name": "Hydra",
+      "image": "/imgs/Hydra_screenshot.png"
+    },
+    {
+      "id": "jormungandr",
+      "name": "Jörmungandr",
+      "image": "/imgs/jormungandr.png"
+    },
+    {
+      "id": "coatyl",
+      "name": "Coatyl",
+      "image": "/imgs/Coatyl.png"
+    },
+    {
+      "id": "chinese-dragon",
+      "name": "Chinese Dragon",
+      "image": "/imgs/chinesedragon.png"
+    },
+    {
+      "id": "wyvern",
+      "name": "Wyvern",
+      "image": "/imgs/wyvern.png"
+    },
+    {
+      "id": "red-dragon",
+      "name": "Red Dragon/Dragonette",
+      "image": "/imgs/dragon.png"
+    },
+    {
+      "id": "ryujin",
+      "name": "Japanese Dragon (Ryujin)",
+      "image": "/imgs/ryujin.png"
+    }
+  ]
+  

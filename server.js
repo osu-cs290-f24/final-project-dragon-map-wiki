@@ -1,21 +1,13 @@
 const express = require('express');
 const path = require('path');
-var exphbs = require('express-handlebars')
 
 const app = express();
 const PORT = 3000;
 
-app.engine("handlebars", exphbs.engine({
-  defaultLayout: null
-}))
-
-app.set("view engine", "handlebars")
-app.use(express.static('static'))
-
 app.use(express.static(path.join(__dirname, 'DragonMapWiki')));
 
 app.get('/', (req, res) => {
-  res.status(200).sendFile(path.join(__dirname, 'DragonMapWiki', 'index.html'));
+  res.status(200).render('index', { title: 'Dragon Map Wiki', dragons: dragons });
 });
 
 
@@ -38,7 +30,7 @@ app.get('/DragonMap', (req, res) => {
 });
 
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, 'DragonMapWiki', '404.html'));
+  res.status(404).render('404', { title: '404 - Page Not Found', is404: true });
 });
 
 app.listen(PORT, () => {

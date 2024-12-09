@@ -1,0 +1,17 @@
+<div class="overlay">
+  <div class="center-content">
+    <img src="/imgs/DragLogo.png" alt="Dragon Map Wiki Logo" class="logo">
+    <h1 class="title">Welcome to Dragon Map Wiki</h1>
+    <button id="goToWiki" onclick="location.href='/DragonMap'">Explore Dragon Map</button>
+    
+    <div class="dragon-gallery">
+      {{#each dragons}}
+        <div class="dragon-item">
+          <img id="{{id}}" src="{{image}}" alt="{{name}}">
+          <h2>{{name}}</h2>
+          <p>{{description}}</p>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
