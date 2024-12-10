@@ -1,37 +1,46 @@
-  <button type="button" id="add-dragon-button"><i class="fas fa-plus"></i></button>
-
-    <div id="modal-backdrop" class="hidden"></div>
-    <div id="add-dragon-modal" class="hidden">
-      <div class="modal-dialog">
-
-        <div class="modal-header">
-          <h3>Add your own Dragon!</h3>
-          <button type="button" id="modal-close" class="modal-hide-button">&times;</button>
-        </div>
-
-        <div class="modal-body">
-
-          <div class="post-input-element">
-            <label for="post-name-input">Dragons Name</label>
-            <input type="text" id="post-name-input"></input>
-          </div>
-
-          <div class="post-input-element">
-            <label for="post-photo-input">Photo URL</label>
-            <input type="text" id="post-photo-input">
-          </div>
-
-          <div class="post-input-element">
-            <label for="post-description-input">Description</label>
-            <input type="text" id="post-description-input">
-          </div>
-
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" id="modal-cancel" class="modal-hide-button action-button">Cancel</button>
-          <button type="button" id="modal-accept" class="action-button">Create Post</button>
-        </div>
-
-      </div>
+  <div class="dragon-image-container">
+    <div class="image-wrapper">
+      <img src="../../imgs/cute dragon.png" alt="cute dragon">  
+      <button type="button" id="add-dragon-button">+<i class="fas fa-plus"></i></button>
     </div>
+  </div>
+
+      <div id="modal-backdrop" class="hidden"></div>
+      <div id="add-dragon-modal" class="hidden">
+        <div class="modal-dialog">
+
+          <div class="modal-header">
+            <h3>Add your own Dragon!</h3>
+            <button type="button" id="modal-close" class="modal-hide-button">&times;</button>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="post-input-element">
+              <label for="post-name-input">Dragon Name</label>
+              <input type="text" id="post-name-input"></input>
+            </div>
+
+            <div class="post-input-element">
+              <label for="post-photo-input">Photo URL</label>
+              <input type="text" id="post-photo-input">
+            </div>
+
+            <div class="post-input-element">
+              <label for="post-description-input">Description</label>
+              <input type="text" id="post-description-input">
+            </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" id="modal-cancel" class="modal-hide-button action-button">Cancel</button>
+            <button type="button" id="modal-accept" class="action-button">Share!</button>
+          </div>
+
+          <div class="dragon_photo_container">
+            <img src="../../imgs/white_dragon0.png" alt="cute dragon">  
+          </div>
+
+        </div>
+      </div>
