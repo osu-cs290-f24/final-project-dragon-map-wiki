@@ -1,0 +1,96 @@
+header {
+    background-color: #5a2d82;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+
+}
+  
+header h1 {
+    margin: 0;
+}
+  
+nav {
+    margin-top: 10px;
+}
+
+body {
+    background-color: #ffd8e6;
+}
+
+#HomePage {
+    background-color: #d4a5e5;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#HomePage:hover {
+    background-color: #b589d8;
+}
+
+#posts {
+    /* display: flex;              
+    flex-wrap: wrap;            
+    justify-content: flex-start; 
+    gap: 10px; 
+    /* text-align: left;  */
+    
+   
+}
+
+.post {
+    /* display: flex; */
+    display: flex;    
+    flex-wrap: wrap;  
+    /* justify-content: flex-start;  */
+} 
+
+.post-contents {
+    font-family: "Robato", sans-serif;
+    display: flex;
+    flex-direction: column;
+ 
+    border: 3px solid rgb(75, 45, 0);
+    padding: 10px;
+    border-radius: 10%;
+
+    width:300px;
+    height:400px;
+    margin: 10px 10px;
+    background-color: aliceblue;
+
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:rgb(56, 36, 0)
+}
+
+.post-image-container {
+    /* Set the width of the image container */
+    width: 300px;               
+    overflow: hidden;          
+    display: flex;         
+    
+    /* Center the image */
+    justify-content: center;    
+}
+
+.post-image-container img {
+    max-width: 100%;               
+    min-height: 60%;              
+    
+}
+
+.description-container {
+    background-color: bisque;
+    border-radius: 10%;
+    margin:10px 5px;
+    padding: 0 5px;
+}

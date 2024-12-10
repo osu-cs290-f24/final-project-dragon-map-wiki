@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Dragon Wiki</title>
-        <link rel="stylesheet" href="DragonWiki.css">
+        <link rel="stylesheet" href="../static/DragonWiki.css">
     </head>
     <header>
         <h1>Dragon Wiki</h1>
@@ -13,11 +13,13 @@
     </header>
     <body>
         <section id="posts">
-        {{#each posts}}
-          {{> oneDragon}}
-        {{/each}}
+            {{#each posts}}
+                {{> oneDragon}}
+            {{/each}}
         
         </section>
+
+        
     </body>
     
 </html>
