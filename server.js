@@ -5,7 +5,7 @@ var exphbs = require('express-handlebars')
 var dragonData = require("./postData.json")
 
 const app = express();
-const PORT = 8000;
+const PORT = 3000;
 
 app.engine("handlebars", exphbs.engine({
   defaultLayout: null
