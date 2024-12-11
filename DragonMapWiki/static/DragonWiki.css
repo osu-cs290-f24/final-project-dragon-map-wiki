@@ -1,5 +1,5 @@
 header {
-    background-color: #5a2d82;
+    background-color: #3d076b;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -15,7 +15,7 @@ nav {
 }
 
 body {
-    background-color: #ffd8e6;
+    background-color: hsla(118, 100%, 93%, 0.788);
 }
 
 #HomePage {

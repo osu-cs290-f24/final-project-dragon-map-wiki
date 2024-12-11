@@ -38,5 +38,20 @@
     "name": "Japanese Dragon (Ryujin)",
     "image": "/imgs/ryujin.png",
     "description": "Japanese dragons are diverse legendary creatures in Japanese mythology and folklore. Influenced by Chinese dragons, they are often water deities associated with rainfall and bodies of water, depicted as large, wingless serpentine creatures with clawed feet."
+  },
+  {
+    "name": "kitty",
+    "image": "https://www.wondercide.com/cdn/shop/articles/Upside_down_gray_cat.png?v=1685551065&width=1100",
+    "description": "cute cats"
+  },
+  {
+    "name": "test",
+    "image": "https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg",
+    "description": "cat test"
+  },
+  {
+    "name": "dragon cat",
+    "image": "https://nationalzoo.si.edu/sites/default/files/animals/sandcat-001.jpg",
+    "description": "cats used for test"
   }
 ]
