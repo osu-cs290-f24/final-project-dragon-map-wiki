@@ -1,83 +1,241 @@
 /* General Reset */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  body {
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 20px;
-  }
-  
-  /* Title Styling */
-  h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #4a90e2;
-  }
-  
-  /* Dragon List Container */
-  .dragon-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  /* Dragon Info Box */
-  .dragon-info {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .dragon-info:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Dragon Image */
-  .dragon-info img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  /* Dragon Name */
-  .dragon-info h2 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: #333;
-  }
-  
-  /* Dragon Description */
-  .dragon-info p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  /* Responsive Breakpoints */
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2rem;
-    }
-    
-    .dragon-info h2 {
-      font-size: 1.25rem;
-    }
-  
-    .dragon-info p {
-      font-size: 0.9rem;
-    }
-  }
-  
+body, h1, h2, h3, p, button, nav, section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'sans-serif';
+  background-color: #ffffff;
+  color: #000000;
+  margin-left: 100px;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background-color: #f9f9f9;
+  color: #000000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+header nav {
+  display: block;
+  margin-top: 10px;
+}
+
+header button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: 1px solid #007bff;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+header button:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styling */
+section#posts {
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Individual Dragon Card */
+.oneDragon {
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.oneDragon h2 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.oneDragon p {
+  font-size: 1rem;
+}
+
+/* Add Dragon Section */
+.addDragon {
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+}
+
+.addDragon h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.addDragon input, .addDragon button {
+  padding: 8px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.addDragon button {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.addDragon button:hover {
+  background-color: #f5f5f5;
+}
+
+/* Post Styling */
+.post {
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.post h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.post .post-image-container {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.post .post-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post .description-container {
+  font-size: 1rem;
+}
+
+.post .description-container p {
+  margin: 0;
+}
+
+/* Modal Styling */
+#add-dragon-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #28a745; /* Green color */
+  color: #ffffff;
+  border: 1px solid #28a745;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#add-dragon-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+#modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#add-dragon-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+}
+
+.modal-dialog {
+  padding: 20px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-header h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.modal-hide-button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 10px 0;
+}
+
+.post-input-element label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.post-input-element input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.modal-footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.action-button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #f9f9f9;
+}
