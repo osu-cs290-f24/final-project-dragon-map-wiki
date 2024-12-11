@@ -5,7 +5,8 @@
     "handlebars": "^4.7.8"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "handlebars views/partials/oneDragon.handlebars -f static/oneDragonTemplate.js"
   },
   "name": "final-project-dragon-map-wiki",
   "description": "Team members - Lucy Cheng - Chase Schrepel - Tashfia Tabassum - Kyohei Yamaguchi",
