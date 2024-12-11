@@ -74,6 +74,23 @@ body::before {
     color: #000;
 }
 
+#goToDragonMap {
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #333;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    font-size: 14px;  
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#goToDragonMap:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+}
+
 .dragon-gallery {
     display: grid;
     grid-template-columns: repeat(4, auto); 
