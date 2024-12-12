@@ -30,8 +30,6 @@ function handle_modal_acceptClick() {
     if (!dragonName || !photoURL ||!dragonDescription) {
       alert("You must fill in all of the fields to share your dragon")
     } else {
-  
-    //   var person = getPersonIdFromURL()
       var url = "/DragonWiki/addDragon";
       fetch(url, {
         method: "POST",
@@ -45,21 +43,22 @@ function handle_modal_acceptClick() {
         }
 
       }).then(function (res) {
+
             if (res.status === 200) {
-            var oneDragonTemplate = Handlebars.templates.oneDragon
-            var newDragonPostHTML = oneDragonTemplate({
-                dragonName: dragonName,
-                photo_url: photoURL,
-                dragon_description: dragonDescription
-            })
-            console.log(newDragonPostHTML);
-            var dragonPostContainer = document.querySelector('#posts')
-            dragonPostContainer.insertAdjacentHTML('beforeend', newDragonPostHTML)
+              var oneDragonTemplate = Handlebars.templates.oneDragon
+              var newDragonPostHTML = oneDragonTemplate({
+                  dragonName: dragonName,
+                  photo_url: photoURL,
+                  dragon_description: dragonDescription
+              })
+              console.log(newDragonPostHTML);
+              var dragonPostContainer = document.getElementById('posts')
+              dragonPostContainer.insertAdjacentHTML('beforeend', newDragonPostHTML)
             } else {
-            alert("An error occurred saving the dragon card.")
+              alert("An error occurred saving the dragon card.")
             }
       }).catch(function (err) {
-        alert("An error occurred")
+          alert("An error occurred")
       })
   
       hide_modal()
@@ -67,6 +66,7 @@ function handle_modal_acceptClick() {
     }
   
 }
+
 
 window.addEventListener('DOMContentLoaded', function () {
 document.getElementById("add-dragon-button").addEventListener("click",show_modal)

@@ -9,7 +9,7 @@ const app = express();
 const PORT = 3000;
 
 app.engine("handlebars", exphbs.engine({
-  defaultLayout: null
+  defaultLayout: 'main'
 }))
 
 app.set("view engine", "handlebars")

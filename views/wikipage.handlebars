@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,9 +6,8 @@
         <link rel="stylesheet" href="../static/DragonWiki.css">
         <script src="../static/wikipage.js" charset="utf-8" defer></script>
 
-        {{!-- Run handlebars to create oneDragonTemplate.js didn't work/ permission denied--}}
-        {{!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
-        <script src="/oneDragonTemplate.js" charset="utf-8" defer></script> --}}
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
+        <script src="/oneDragonTemplate.js" charset="utf-8" defer></script>
     </head>
     <header>
         <h1>Dragon Wiki</h1>
@@ -16,7 +15,7 @@
             <button id="HomePage" onclick="location.href='/'">HOME PAGE</button>
         </nav>
     </header>
-    <body>
+    <body> --}}
         <section id="posts">
             {{#each posts}}
                 {{> oneDragon}}
@@ -26,6 +25,6 @@
         {{> addDragon}}
 
         
-    </body>
+    {{!-- </body>
     
-</html>
+</html> --}}
